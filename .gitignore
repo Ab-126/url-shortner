@@ -1,0 +1,14 @@
+# url-shortener/.gitignore
+# Python
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/urls.db
+
+# React
+frontend/node_modules/
+frontend/dist/
+
+# General
+.env
+.DS_Store
