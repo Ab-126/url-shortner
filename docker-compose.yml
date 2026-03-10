@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"   # host:container
+    volumes:
+      - ./backend/urls.db:/app/urls.db # persist DB outside container
+    
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
