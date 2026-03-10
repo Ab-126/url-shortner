@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const API = "http://localhost:8000";
+const API = "https://url-shortner-ktx6.onrender.com";
 
 // ── tiny helpers ──────────────────────────────────────────────
 function timeAgo(dateStr) {
@@ -12,7 +12,7 @@ function timeAgo(dateStr) {
 }
 
 function shortLink(code) {
-  return `http://localhost:8000/${code}`;
+  return `https://url-shortner-ktx6.onrender.com/${code}`;
 }
 
 // ── components ────────────────────────────────────────────────
